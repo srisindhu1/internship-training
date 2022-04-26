@@ -1,0 +1,7 @@
+k=int(input())
+a=list(map(int,input()))
+for i in range(len(a)):
+    for j in range(len(a)):
+        sum=a[i]+a[j]
+        if(sum==k):
+            print(true)
