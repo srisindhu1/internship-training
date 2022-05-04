@@ -1,0 +1,7 @@
+WORDS = ['foo', 'bar', ...]
+def autocomplete(s):
+    results = set()
+    for word in WORDS:
+        if word.startswith(s):
+            results.add(word)
+    return results
