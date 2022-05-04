@@ -1,0 +1,13 @@
+from typing import List
+
+
+def solution(arr: List[int]) -> int:
+    arr.sort()
+    num = 1
+    for _, v in enumerate(arr):
+        if v > 0:
+            if v == num:
+                num += 1
+            else:
+                return num
+    return num
